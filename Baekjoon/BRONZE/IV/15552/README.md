@@ -23,9 +23,6 @@ Python을 사용하고 있다면, input 대신 sys.stdin.readline을 사용할 �
 ### 출력
 각 테스트케이스마다 A+B를 한 줄에 하나씩 순서대로 출력한다.
 
-<div style="display:flex; justify-content: space-between;">
-<div style="width: 45%;">
-
 ### 예제 입력 1
 ```
 5
@@ -36,9 +33,6 @@ Python을 사용하고 있다면, input 대신 sys.stdin.readline을 사용할 �
 1000 1000
 ```
 
-</div>
-<div style="width: 45%;">
-
 ### 예제 출력 1
 ```
 2
@@ -47,10 +41,6 @@ Python을 사용하고 있다면, input 대신 sys.stdin.readline을 사용할 �
 100
 2000
 ```
-
-</div>
-</div>
-
 
 ### 알고리즘 분류
 * 구현
