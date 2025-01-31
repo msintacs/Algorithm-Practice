@@ -55,7 +55,7 @@ $3+4-5 = 7 - 5 = 2$입니다.
 
  
 $A, B, C$를 문자열로 생각했을 때는 
-$\texttt{`}3\texttt{'}+\texttt{`}4\texttt{'}-\texttt{`}5\texttt{'} = \texttt{`}34\texttt{'} - \texttt{`}5\texttt{'} = 29$입니다.
+$3 + 4 - 5 = 34 - 5 = 29$입니다.
 
 ### 노트
  
