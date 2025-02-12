@@ -3,9 +3,8 @@
 int main()
 {
     int T, H, W, N;
-    int i, j, k;
+    int i;
     int nRow, nCol;
-    int nTmp;
 
     scanf("%d", &T);
 
