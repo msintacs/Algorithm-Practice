@@ -6,7 +6,7 @@
 #define SUCCESS 0
 #define FAIL_1 -1
 
-/**
+/**d
  * @brief 10진수 수를 2진수로 변환한다.
  *
  * @param nDecimal 0 ~ 9 범위의 10진수
