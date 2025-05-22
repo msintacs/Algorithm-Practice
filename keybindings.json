@@ -1,0 +1,19 @@
+[
+  // C 실행 전용 단축키
+  {
+    "key": "ctrl+f5",
+    "command": "code-runner.run",
+    "when": "editorLangId == c"
+  },
+  // Java 실행 전용 단축키
+  {
+    "key": "ctrl+f9",
+    "command": "code-runner.run",
+    "when": "editorLangId == java"
+  },
+  // Code Runner 공통 실행 (기존 유지 or 변경 가능)
+  {
+    "key": "ctrl+f11",
+    "command": "code-runner.run"
+  }
+]

@@ -1,5 +1,12 @@
 {
-    "files.associations": {
-        "stdio.h": "c"
-    }
+  "files.associations": {
+    "stdio.h": "c"
+  },
+  "code-runner.runInTerminal": true,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.executorMap": {
+    "java": "start cmd /k \"cd $dir && javac $fileName && java $fileNameWithoutExt & pause\"",
+    "c": "start cmd /k \"cd $dir && gcc $fileName -o $fileNameWithoutExt.exe && $fileNameWithoutExt.exe & pause\""
+
+  }
 }

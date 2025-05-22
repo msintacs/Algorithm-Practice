@@ -1,44 +1,38 @@
 {
-    "version": "0.2.0",
-    "configurations": [
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Java CMD 실행",
+      "request": "launch",
+      "mainClass": "Main", // 패키지가 없으므로 Main 그대로 사용
+      "console": "externalTerminal",
+      "projectName": "CODE_TEST_4f9c268e"
+    },
+    {
+      "name": "gcc.exe - 활성 파일 빌드 및 디버그",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "C:\\Windows\\System32\\cmd.exe",
+      "args": [
+        "/C",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe & pause"
+      ],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": true,
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\mingw64\\bin\\gdb.exe",
+      "setupCommands": [
         {
-            "type": "java",
-            "name": "Improved",
-            "request": "launch",
-            "mainClass": "Improved",
-            "projectName": "CODE_TEST_4f9c268e"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "Main",
-            "projectName": "CODE_TEST_4f9c268e"
-        },
-        {
-            "name": "gcc.exe - 활성 파일 빌드 및 디버그",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "C:\\Windows\\System32\\cmd.exe",
-            "args": [
-                "/C",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe & pause"
-            ],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": true,
-            "internalConsoleOptions": "openOnSessionStart",
-            "MIMode": "gdb",
-            "miDebuggerPath": "C:\\mingw64\\bin\\gdb.exe",
-            "setupCommands": [
-                {
-                    "description": "gdb에 자동 서식 지정 사용",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ],
-            "preLaunchTask": "C/C++: gcc.exe 활성 파일 빌드"
+          "description": "gdb에 자동 서식 지정 사용",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
         }
-    ]
+      ],
+      "preLaunchTask": "C/C++: gcc.exe 활성 파일 빌드"
+    }
+  ]
 }
