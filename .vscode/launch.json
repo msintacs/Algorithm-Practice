@@ -2,6 +2,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Improved",
+            "request": "launch",
+            "mainClass": "Improved",
+            "projectName": "CODE_TEST_4f9c268e"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "CODE_TEST_4f9c268e"
+        },
+        {
             "name": "gcc.exe - 활성 파일 빌드 및 디버그",
             "type": "cppdbg",
             "request": "launch",
