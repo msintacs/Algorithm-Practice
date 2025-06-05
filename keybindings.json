@@ -11,6 +11,12 @@
     "command": "code-runner.run",
     "when": "editorLangId == java"
   },
+  // Python 실행 전용 단축키
+  {
+    "key": "ctrl+f12",
+    "command": "code-runner.run",
+    "when": "editorLangId == python"
+  },
   // Code Runner 공통 실행 (기존 유지 or 변경 가능)
   {
     "key": "ctrl+f5",

@@ -5,8 +5,12 @@
   "code-runner.runInTerminal": true,
   "code-runner.clearPreviousOutput": true,
   "code-runner.executorMap": {
-    "java": "start cmd /k \"cd $dir && javac $fileName && java $fileNameWithoutExt & pause\"",
-    "c": "start cmd /k \"cd $dir && gcc $fileName -o $fileNameWithoutExt.exe && $fileNameWithoutExt.exe & pause\""
+    "java": "start cmd /c \"cd $dir && chcp 65001 && javac -encoding UTF-8 $fileName && java $fileNameWithoutExt & pause\"",
+    "c": "start cmd /c \"cd $dir && chcp 65001 && gcc $fileName -o $fileNameWithoutExt.exe && $fileNameWithoutExt.exe & pause\"",
+    "python": "start cmd /c \"cd $dir && chcp 65001 && python $fileName & pause\""    
 
-  }
+  },
+  "java.compile.encoding": "UTF-8",
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true
 }

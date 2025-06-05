@@ -42,30 +42,33 @@ public class Main {
         int dir = 3;
 
         int count = 1;
-        int endX = C - 1;
-        int endY = R - 1;
-        while (waitingNumber > 0) {
+        while (true) {
 
-            System.out.println("X: " + X + " Y: " + Y);
+            // 한글테스트
+            System.out.println("한글");
 
             seats[Y][X] = count;
+
+            if (count == waitingNumber) {
+                System.out.println((X + 1) + " " + (R - Y));
+                break;
+            }
 
             int tmpX = X + moveX[dir];
             int tmpY = Y + moveY[dir];
 
-            if (tmpX >= endX || tmpY < 0 || tmpY >= endY || seats[tmpY][tmpX] == 0) {
-                System.out.println("dir Change: " + dir);
+            if (tmpX < 0 || tmpX >= C || tmpY < 0 || tmpY >= R || seats[tmpY][tmpX] != 0) {
                 dir = (dir + 1) % 4;
-                continue;
+                tmpX = X + moveX[dir];
+                tmpY = Y + moveY[dir];
             }
 
-            Y += moveY[dir];
-            X += moveX[dir];
+            X = tmpX;
+            Y = tmpY;
 
             count++;
-            waitingNumber--;
         }
 
-        printSeats(seats, C, R);
+        // printSeats(seats, C, R);
     }
 }

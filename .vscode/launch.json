@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "debugpy",
+      "request": "launch",
+      "name": "Python 파일 실행",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    },
+    {
       "type": "java",
       "name": "Java CMD 실행",
       "request": "launch",
