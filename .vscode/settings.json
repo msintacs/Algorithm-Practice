@@ -12,5 +12,7 @@
   },
   "java.compile.encoding": "UTF-8",
   "python.formatting.provider": "black",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "java.errors.incompleteClasspath.severity": "ignore"
 }
